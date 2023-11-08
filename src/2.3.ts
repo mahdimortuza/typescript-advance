@@ -11,9 +11,14 @@
     // const boolArray: boolean[] = [true, false, true]
     const boolArray: GenericType<boolean> = [true, false, true]
 
+    // using generic as interface 
+    interface User {
+        name: string
+        age: number
+    }
 
     // array of object procedure by generic
-    const user: GenericType<{ name: string, age: number }> = [
+    const user: GenericType<User> = [
         {
             name: "rahat",
             age: 100
